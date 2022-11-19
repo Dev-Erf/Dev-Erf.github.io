@@ -2,7 +2,7 @@
 
 const config = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (Required)
+    username: 'Dev-Erf', // Your GitHub org/user name. (Required)
     sortBy: 'stars', // stars | updated
     limit: 10, // How many projects to display.
     exclude: {
@@ -11,72 +11,63 @@ const config = {
     },
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
+    linkedin: 'etajalli',
+    twitter: 'TajalliErfan',
     facebook: '',
-    instagram: '',
+    instagram: 'erfan_.tajalli',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    medium: 'tajalli.erfan',
+    dev: 'deverf',
     stackoverflow: '', // format: userid/username
-    website: 'https://arifszn.github.io',
+    website: '',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'etajalli@mun.ca',
   },
   resume: {
-    fileUrl: 'resume.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
+    'Python','Machine Learning', 'Image Processing', 'NLP', 'Data Engineering',
+    'Express.js',
     'JavaScript',
-    'React.js',
+    'React.js','Redux.js', 
     'Node.js',
     'Nest.js',
-    'MySQL',
     'PostgreSQL',
     'Git',
     'Docker',
-    'PHPUnit',
+    'AWS',
     'CSS',
-    'Antd',
-    'Tailwind',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: ' Gardeshgaran Shiraz Travel Company ',
+      position: 'Full Stack Engineer',
+      from: 'Dec 2018',
+      to: 'May 2021',
+      companyLink: 'https://gardeshgaran1.com/',
     },
-    {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
-    },
+ 
   ],
   education: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'Memorial University of Newfoundland',
+      degree: 'Master of Computer Engineering',
+      from: '2021',
+      to: '2023',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'apadana institute of higher education ',
+      degree: 'Bachelor of Computer Engineering - Software',
+      from: '2014',
+      to: '2018',
     },
   ],
   // Display blog posts from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
+    username: 'deverf', // to hide blog section, keep it empty
     limit: 3, // How many posts to display. Max is 10.
   },
   googleAnalytics: {
@@ -88,7 +79,7 @@ const config = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'business',
+    defaultTheme: 'night',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode

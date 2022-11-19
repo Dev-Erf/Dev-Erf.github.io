@@ -1,5 +1,21 @@
 import axios from 'axios';
-import { Fragment, useCallback, useEffect, useState } from 'react';
+import React, { Fragment, useCallback, useEffect, useState, useRef } from 'react';
+
+import BIRDS from 'vanta/dist/vanta.birds.min';
+import CELLS from 'vanta/dist/vanta.cells.min'
+import CLOUDS from 'vanta/dist/vanta.clouds.min'
+import CLOUDS2 from 'vanta/dist/vanta.clouds2.min'
+import DOTS from 'vanta/dist/vanta.dots.min'
+//import FOGS from 'vanta/dist/vanta.fogs.min'
+import GLOBE from 'vanta/dist/vanta.globe.min'
+import HALO from 'vanta/dist/vanta.halo.min'
+import NET from 'vanta/dist/vanta.net.min'
+import RINGS from 'vanta/dist/vanta.rings.min'
+import RIPPLE from 'vanta/dist/vanta.ripple.min'
+import TOPOLOGY from 'vanta/dist/vanta.topology.min'
+import TRUNK from 'vanta/dist/vanta.trunk.min'
+import WAVES from 'vanta/dist/vanta.waves.min'
+
 import HeadTagEditor from './head-tag-editor';
 import ErrorPage from './error-page';
 import ThemeChanger from './theme-changer';
@@ -28,6 +44,45 @@ import { formatDistance } from 'date-fns';
 const bgColor = 'bg-base-300';
 
 const GitProfile = ({ config }) => {
+
+
+
+
+
+
+
+
+  const [vantaEffect, setVantaEffect] = useState(null)
+  const myRef = useRef(null)
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(WAVES({
+        el: myRef.current,
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        zoom:.3
+      }))
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy()
+    }
+  }, [vantaEffect])
+
+
+
+
+
+
+
+
+
+
+
   const [error, setError] = useState(
     typeof config === 'undefined' && !config ? noConfigError : null
   );
@@ -151,7 +206,7 @@ const GitProfile = ({ config }) => {
         ) : (
           sanitizedConfig && (
             <Fragment>
-              <div className={`p-4 lg:p-10 min-h-full ${bgColor}`}>
+              <div className={`p-4 lg:p-10 min-h-full ${bgColor}`}   ref={myRef}>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-box">
                   <div className="col-span-1">
                     <div className="grid grid-cols-1 gap-6">
@@ -212,7 +267,7 @@ const GitProfile = ({ config }) => {
                 <div className="card compact bg-base-100 shadow">
                   <a
                     className="card-body"
-                    href="https://github.com/arifszn/gitprofile"
+                    href="https://github.com/Dev-Erf"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -221,8 +276,8 @@ const GitProfile = ({ config }) => {
                         skeleton({ width: 'w-52', height: 'h-6' })
                       ) : (
                         <p className="font-mono text-sm">
-                          Made with{' '}
-                          <span className="text-primary">GitProfile</span> and
+                          Made by{' '}
+                          <span className="text-primary">Erfan</span> with
                           ❤️
                         </p>
                       )}
