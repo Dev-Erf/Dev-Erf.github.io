@@ -79,6 +79,7 @@ const config = {
     snippetVersion: 6,
   },
   backgroundsArray: [
+    'net' ,
     'dots' ,
     'birds' ,
     'cells',
@@ -87,7 +88,6 @@ const config = {
     'dots' ,
     'globle' ,
     'halo' ,
-    'net' ,
     'rings' ,
     'ripple' ,
     'topology' ,
