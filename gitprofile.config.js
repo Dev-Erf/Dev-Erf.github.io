@@ -94,6 +94,9 @@ const config = {
     'trunk' ,
     'waves' ,
   ],
+  backgroundConfig: {
+    
+  },
   themeConfig: {
     defaultTheme: 'night',
 
