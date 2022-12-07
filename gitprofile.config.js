@@ -80,22 +80,17 @@ const config = {
   },
   backgroundsArray: [
     'net' ,
-    'dots' ,
+    'waves' ,
     'birds' ,
-    'cells',
-    'clouds' ,
-    'clouds2' ,
-    'dots' ,
     'globle' ,
+    'dots' ,
     'halo' ,
     'rings' ,
-    'ripple' ,
-    'topology' ,
     'trunk' ,
-    'waves' ,
+    'cells',
   ],
   backgroundConfig: {
-    
+
   },
   themeConfig: {
     defaultTheme: 'night',
