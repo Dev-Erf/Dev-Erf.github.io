@@ -289,8 +289,10 @@ module.exports = {
 ```
 ### background: 
 you can change default background and order they're shown in here in this array: 
+
 **first one would be chosen as default** 
 
+```js
   backgroundsArray: [
     'net' ,
     'waves' ,
@@ -301,8 +303,8 @@ you can change default background and order they're shown in here in this array:
     'rings' ,
     'trunk' ,
     'cells',
-  ],
-
+  ]
+```
 ### Google Analytics
 
 **GitProfile** supports both GA3 and GA4. If you do not want to use Google Analytics, keep the `id` empty.
