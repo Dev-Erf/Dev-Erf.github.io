@@ -287,6 +287,21 @@ module.exports = {
   },
 };
 ```
+### background: 
+you can change default background and order they're shown in here in this array: 
+**first one would be chosen as default** 
+
+  backgroundsArray: [
+    'net' ,
+    'waves' ,
+    'birds' ,
+    'globle' ,
+    'dots' ,
+    'halo' ,
+    'rings' ,
+    'trunk' ,
+    'cells',
+  ],
 
 ### Google Analytics
 
